@@ -1,0 +1,33 @@
+// Using Chrome Dev Console JS on the solutions page:
+
+// Part 1
+// Get each line item from page to array
+const entries = $('pre').innerText.split('\n')
+// Return the product of two values that sum to 2020
+entries
+    .filter(entry => 
+        entries.indexOf(String(2020 - parseInt(entry))) > -1)
+    .reduce((acc, curr) => acc*curr)
+
+/* Big O Runtime: n2
+    runs through all items one at a time, 
+    and checks the difference against all n
+*/
+
+// Part 2
+// Return the product of three values that sum to 2020
+entries.reduce((acc, curr, i, source) => { 
+    source.slice(i).forEach(num => { 
+     var third = String(2020-parseInt(curr)-parseInt(num))
+     if (source.indexOf(third) > -1) { 
+      acc = third*curr*num 
+     }
+    })
+   return acc 
+   })
+
+/* Big O Runtime: n(n-1)n
+    runs through each value, 
+    then runs through all numbers ahead (slice) to create difference
+    and runs through all numbers looking for difference
+*/

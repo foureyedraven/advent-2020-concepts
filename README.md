@@ -5,11 +5,11 @@ Discovering the CS concepts in the 25 Advent of Code challenges 2020
 See `/Day-1` for data, `javascript` and `Chrome browser dev console` solutions.
 
 ### Part 1
-Goal: Find two numbers in a list of 200 that are the only ones that sum to 2020.
-Solution: 1016619
-Concepts: ?
+Goal: Find two numbers in a list of 200 that sum to 2020.\n
+Solution: 1016619\n
+Concepts: ?\n
 
 ### Part 2
-Goal: Find three numbers in a list of 200 that are the only ones that sum to 2020.
-Solution: 218767230
-Concepts: ?
+Goal: Find three numbers in a list of 200 that sum to 2020.\n
+Solution: 218767230\n
+Concepts: ?\n
